@@ -1,0 +1,60 @@
+/* CSS */
+/* CSS */
+.container {
+    /* Remove display: flex and flex-direction */
+    /* Remove height property */
+  }
+  
+  .content {
+    display: flex;
+  }
+  
+  .search-filter-content {
+    flex: 70%;
+    /* padding: 0px; */
+    /* height: 100px; Set the height as needed */
+    margin-left: 0px; /* Create space between Sidebar and main content */
+  }
+
+  .content-body {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .sidebar {
+    flex: 15%;
+    padding: 20px;
+  }
+
+  
+  .filter-btn {
+    display: inline-block;
+    border: solid rgb(30, 16, 127);
+    background: #ffff;
+    border-radius: 10px; /* Adjust the border-radius as needed */
+    padding: 10px 20px;
+    
+  }
+
+    /* Optional: Add hover effect */
+    .filter-btn:hover {
+        cursor: pointer;
+      }
+
+  .filter-btn button {
+    border: none;
+    background: #ffff;
+  }
+  
+  .filter-icon {
+    color: rgb(30, 16, 127); /* Text color */
+    margin-right: 10px; /* Add some spacing between the icon and text */
+    display: flex;
+    align-items: center;
+  }
+  
+
+  
+  

@@ -1,0 +1,37 @@
+/* SearchBar.css */
+.search-container {
+    display: flex;
+    align-items: center;
+  }
+
+.search-bar-container {
+  display: flex;
+  align-items: center;
+  border: 2px solid rgba(0, 0, 0, 0.432);
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+/* Optional: Add focus styles for user interaction */
+.search-bar-container:focus-within {
+  outline: none;
+  border-color: #0077cc;
+}
+.search-bar {
+    border: none; /* Black border */
+    font-size: 16px;
+    width: 100%;
+  }
+  
+  /* Optional: Add focus styles for user interaction */
+  .search-bar:focus {
+    outline: none; /* Remove the default focus outline */
+  }
+  
+  .search-icon {
+    margin-right: 8px; /* Add some spacing between the icon and input */
+  }

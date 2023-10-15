@@ -1,0 +1,36 @@
+/* Breadcrumb.css */
+.breadcrumb {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    background: #ffff;
+  }
+  
+  .breadcrumb li {
+    /* margin-right: 10px; */
+    font-size: 14px;
+  }
+  
+  .breadcrumb li:not(:last-child) {
+    margin-right: 10px; /* Add margin between list items */
+  }
+  
+  
+  .breadcrumb a {
+    text-decoration: none;
+    color: #0077cc;
+  }
+  
+  /* Media query for responsiveness */
+  @media (max-width: 768px) {
+    .breadcrumb {
+      flex-wrap: wrap;
+    }
+  
+    .breadcrumb li {
+      margin-right: 5px;
+      margin-bottom: 5px;
+    }
+  }
+  

@@ -1,0 +1,63 @@
+/* Sidebar Styles */
+.sidebar {
+    background: #fff;
+    padding: 20px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .sidebar h2 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .dropdown {
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .dropdown span {
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .dropdown-content {
+    /* display: none; */
+    flex-direction: column;
+    position: absolute;
+    background-color: #fff;
+    /* width: 150px; */
+    padding: 0 10px 10px 10px;
+    z-index: 1;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  }
+
+  /* .dropdown.active .dropdown-content {
+    display: flex;
+  } */
+  
+  /* .dropdown:hover .dropdown-content {
+    display: flex;
+  } */
+  
+  .dropdown-content p {
+    padding: 20px 0 0 0;
+    /* border-bottom: 1px solid #ccc; */
+  }
+  
+  /* .dropdown-content p:last-child {
+    border-bottom: none;
+  } */
+
+
+  @media (max-width: 769px) {
+    .sidebar {
+        display: none;
+      }
+  }
+  

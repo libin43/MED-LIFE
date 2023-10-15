@@ -1,0 +1,15 @@
+/* RoundedButton.css */
+.rounded-button {
+    border: none;
+    background-color: #0077cc;
+    color: #fff;
+    border-radius: 8px; /* Adjust the corner radius as needed */
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .rounded-button:hover {
+    background-color: #0055aa; /* Change the color on hover */
+  }
+  

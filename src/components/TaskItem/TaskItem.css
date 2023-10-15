@@ -1,0 +1,51 @@
+.task-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .image-container {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .task-details {
+    flex: 1;
+  }
+  
+  .row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  
+  .column {
+    margin-right: 10px;
+    flex: 1;
+  }
+  
+  .patient-name {
+    flex: 2;
+  }
+  
+  .task-id,
+  .status {
+    flex: 1;
+  }
+  
+  .appointment-id,
+  .date-time {
+    flex: 1;
+  }
+  
+  /* No content in the third column, so it remains empty */
+  
