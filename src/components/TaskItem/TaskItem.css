@@ -1,38 +1,150 @@
   .task-item-grid-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
-    gap: 10px; /* Spacing between columns and rows */
+      display: grid;
+      grid-template-columns: 0.4fr repeat(3, 1fr);
+      /* 4 equal columns */
+      gap: 10px;
+      /* Spacing between columns and rows */
+      margin: 1rem 1rem 2rem 1rem;
+      padding: 1rem 0 1rem 0;
+      border: 2px solid rgb(180, 180, 180);
+      border-radius: 5px;
+      box-sizing: border-box;
   }
 
   .grid1-container {
-    grid-column: 1 / span 1; /* Occupies one column */
-    grid-row: 1 / span 2;
+      grid-column: 1 / span 1;
+      /* Occupies one column */
+      grid-row: 1 / span 2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
   }
-  
+
   .grid2-container {
-    grid-column: 2 / span 1; /* Occupies one column */
+      grid-column: 2 / span 1;
+      /* Occupies one column */
   }
-  
+
   .grid3-container {
-    grid-column: 3 / span 1; /* Occupies one column */
+      grid-column: 3 / span 1;
+      /* Occupies one column */
   }
-  
+
   .grid4-container {
-    grid-column: 4 / span 1; /* Occupies one column */
+      grid-column: 4 / span 1;
+      /* Occupies one column */
+      text-align: end;
+      padding-right: 0.7rem;
   }
-  
+
 
   .grid5-container {
-    grid-column: 2 / span 3; /* Spans all 4 columns */
-    grid-row: 2; /* Starts on the second row */
-    display: flex; /* Use flexbox for the items inside */
-    align-items: center; /* Vertically center items */
-    justify-content: space-between; /* Space between items */
-    padding: 0 1rem 0 0;
+      grid-column: 2 / span 3;
+      /* Spans all 4 columns */
+      grid-row: 2;
+      /* Starts on the second row */
+      display: flex;
+      /* Use flexbox for the items inside */
+      align-items: center;
+      /* Vertically center items */
+      justify-content: space-between;
+      /* Space between items */
+      padding: 0 1rem 0 0;
+      color: rgb(0, 92, 250);
   }
 
   /* Add additional styling for your elements */
-.row {
-    margin-bottom: 1rem;
+  .row {
+      margin-bottom: 1rem;
+      color: rgb(84, 84, 84);
   }
 
+  .grid1-container img {
+      width: 120px;
+      /* Set the desired width */
+      height: 120px;
+      /* Set the desired height */
+      object-fit: cover;
+      /* Preserve the aspect ratio while covering the container */
+      border-radius: 50%;
+      /* Make the image rounded */
+  }
+
+  .grid3-container .row {
+      display: flex;
+      justify-content: space-between;
+      /* Align to the left and right */
+      align-items: center;
+  }
+
+  .grid3-container .row span {
+      width: calc(100% - 8rem);
+  }
+
+  .grid4-container .status span {
+      font-size: large;
+      font-weight: 600;
+      padding-left: 1rem;
+      color: rgb(219, 18, 18);
+  }
+
+  .patient-name {
+      font-weight: 700;
+      color: black;
+  }
+
+
+  .assessment-btn button {
+      background-color: rgb(30, 16, 127);
+      color: white;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+  }
+
+  .assessment-btn button:hover {
+      background-color: #0055aa;
+      border-radius: 5px;
+  }
+
+
+  @media (max-width: 768px) {
+    .task-item-grid-container {
+      grid-template-columns: 1fr;
+      margin: 1rem 0.5rem 2rem 0.5rem;
+    }
+  
+    .grid1-container img {
+      width: 80px;
+      height: 80px;
+    }
+  
+    .grid5-container {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0;
+    }
+      .grid3-container .row span {
+    width: auto; /* Reset the width for laptop screens (1024px) */
+  }
+  }
+  
+  /* Mobile Screens (up to 480px) */
+  @media (max-width: 480px) {
+    .task-item-grid-container {
+      grid-template-columns: 1fr;
+      margin: 0.5rem;
+      padding: 0.5rem;
+    }
+  
+    .grid1-container img {
+      width: 60px;
+      height: 60px;
+    }
+  
+    .row {
+      margin-bottom: 0.5rem;
+    }    
+  }  

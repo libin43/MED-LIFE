@@ -1,19 +1,20 @@
 .container {
     display: flex;
     flex-direction: column;
-    height: 100%
+    height: 100%;
+    
 }
 
 .content {
     display: flex;
     flex-direction: row;
+    margin-top: 62px;
     /* height: 100%; */
 }
 
-.sidebar {
-    flex: 15%;
-    padding: 20px;
-}
+/* .sidebar-container {
+
+} */
 
 .main-content {
     flex: 85%;
@@ -33,6 +34,9 @@
     justify-content: space-between;
     align-items: center;
 }
+
+/* .assessment-content {
+} */
 
 .filter-btn {
     display: inline-block;

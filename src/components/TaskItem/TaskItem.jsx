@@ -15,18 +15,20 @@ export const TaskItem = ({ patientName, taskId, status, appointmentId, dateTime,
             </div>
 
             <div className="grid3-container">
-                <div className="row task-id">Task ID: {taskId}</div>
-                <div className="row date-time">Date and time: {dateTime}</div>
-                <div className="row date-time">Duration: {dateTime}</div>
+                <div className="row task-id">Task ID: <span>{taskId}</span></div>
+                <div className="row date-time">Date and time: <span>{dateTime}</span></div>
+                <div className="row date-time">Duration: <span>{dateTime}</span></div>
             </div>
 
             <div className="grid4-container">
-                <div className="status">Status: {status}</div>
+                <div className="status">Status: <span>{status}</span></div>
             </div>
 
             <div className="grid5-container">
-                <a className="assessment-link">Intake comprehensive Assessment</a>
-                <button className='assessment-btn'>Start Assesment</button>
+                <a className="assessment-link">Intake Comprehensive Assessment</a>
+                <div className="assessment-btn">
+                <button>Start Assesment</button>
+                </div>
             </div>
         </div>
     )

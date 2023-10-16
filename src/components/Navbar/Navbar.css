@@ -1,11 +1,14 @@
 /* Navbar.css */
 .navbar {
+    position: fixed;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #fff;
     color: #4d4d4d;
     padding: 10px 80px;
+    z-index: 2;
   }
   
   .navbar-left {
@@ -75,19 +78,60 @@
   .user-info {
     display: flex;
     align-items: center;
+    padding-left: 1rem;
+  }
+  
+  .user-image {
+    width: 40px; /* Set the desired size for the circular user image */
+    height: 40px; /* Should be the same as the width to make it a circle */
+    border-radius: 50%; /* Make it circular */
+    overflow: hidden; /* Hide the overflow of the image */
+    margin-right: 10px; /* Add spacing between the image and "Account" section */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 119, 204, 0.5); /* Background color for the circle */
+    color: white; /* Text color for "MA" inside the circle */
+    font-size: 14px; /* Adjust the font size as needed */
   }
   
   .user-image img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    margin-right: 10px;
+    width: 100%; /* Make sure the image takes the full width of the circle */
+    height: auto; /* Preserve the aspect ratio */
+    display: block; /* Remove any default image spacing */
   }
+  
+  .user-account {
+    font-size: 16px; /* Style "Account" text as needed */
+    /* Add additional styling for "Account" */
+  }
+  
 
   #mobile {
     display: none;
   }
+  .clocked-in {
+    display: inline-block;
+  }
   
+  .clocked-in button {
+    border: 1px solid #1E107F;
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: #1E107F;
+    cursor: pointer;
+  }
+  
+  .clocked-icon {
+    display: flex;
+    align-items: center;
+  }
+  
+  .clocked-icon svg {
+    color: #1E107F;
+    margin-right: 5px; /* Add some spacing between the icon and text */
+  }
   /* Media query for smaller screens (tablet and below) */
   @media (max-width: 769px) {
 

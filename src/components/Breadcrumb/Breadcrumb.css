@@ -1,43 +1,62 @@
-/* Breadcrumb.css */
 .breadcrumb {
-    list-style: none;
     display: flex;
-    margin: 0;
-    height: 100%;
+    flex-direction: column;
     background: #ffff;
+    padding: 10px 0;
+    padding: 1rem 1rem 0 1rem
   }
   
-  .breadcrumb ul{
-    list-style: none;
+  .active-heading {
     display: flex;
     align-items: center;
-    padding: 0 0 0 2em;
   }
-  .breadcrumb li {
-    /* margin-right: 10px; */
-    font-size: 14px;
+  
+  .bold-text {
+    font-weight: bold;
+    font-size: 24px; /* Adjust the font size as needed */
+  }
+  
+  .navigation-info {
+    font-size: 16px; /* Adjust the font size as needed for the navigation info */
+    color: rgb(84, 84, 84); /* Set the color as needed */
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-weight: lighter;
+  }
+  
+  .info-icon {
+    color: rgb(84, 84, 84); /* Color for the info icon (>>) */
+    margin: 0 5px; /* Add spacing around the icon */
+  }
+  
+  .active-heading-option-container {
+    display: flex;
+    padding-top: 2rem; /* Add spacing between active heading and options */
     
   }
   
-  .breadcrumb li:not(:last-child) {
-    margin-right: 10px; /* Add margin between list items */
+  .active-heading-option {
+    font-size: 16px;
+    cursor: pointer;
+    padding-right: 1rem;
+    /* position: relative; */
+    /* Add other styles as needed */
+  }
+
+  .active-heading-option.selected {
+   color: rgb(30, 16, 127);
   }
   
-  
-  .breadcrumb a {
-    text-decoration: none;
-    color: #0077cc;
+
+  .active-heading-option::after {
+    content: '';
+    /* flex-grow: 1; */
+    padding-bottom: 10px;
   }
-  
-  /* Media query for responsiveness */
-  @media (max-width: 768px) {
-    .breadcrumb {
-      flex-wrap: wrap;
-    }
-  
-    .breadcrumb li {
-      margin-right: 5px;
-      margin-bottom: 5px;
-    }
+
+  .active-heading-option.selected::after {
+    display: block; /* Display the line when selected */
+    border-bottom: 3.5px solid rgb(30, 16, 127); /* Transparent line by default */
   }
   

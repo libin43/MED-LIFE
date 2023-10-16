@@ -31,7 +31,7 @@ export const Home = () => {
         <div className="container">
             <Navbar />
             <div className="content">
-                <div className="sidebar">
+                <div className="sidebar-container">
                     <Sidebar />
                 </div>
                 <div className="main-content">
@@ -70,6 +70,7 @@ export const Home = () => {
                         </div>
                     </div>
                     <div className="assessment-content">
+                        <TaskItem patientName={'Libin'} taskId={12333} status={'Overdue'} appointmentId={222222} dateTime={'26 Fri 2022'} imageUrl={'https://www.shutterstock.com/image-vector/person-icon-260nw-282598823.jpg'}/>
                         <TaskItem patientName={'Libin'} taskId={12333} status={'Overdue'} appointmentId={222222} dateTime={'26 Fri 2022'} imageUrl={'https://www.shutterstock.com/image-vector/person-icon-260nw-282598823.jpg'}/>
                         <TaskItem patientName={'Libin'} taskId={12333} status={'Overdue'} appointmentId={222222} dateTime={'26 Fri 2022'} imageUrl={'https://www.shutterstock.com/image-vector/person-icon-260nw-282598823.jpg'}/>
                         <TaskItem patientName={'Libin'} taskId={12333} status={'Overdue'} appointmentId={222222} dateTime={'26 Fri 2022'} imageUrl={'https://www.shutterstock.com/image-vector/person-icon-260nw-282598823.jpg'}/>

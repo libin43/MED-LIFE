@@ -1,5 +1,8 @@
 import React, { useState } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa';
+import { BsBoxArrowInRight, BsQuestionCircle } from 'react-icons/bs'
+import { GrNotification } from 'react-icons/gr';
+
 
 import './Navbar.css'
 
@@ -15,7 +18,7 @@ export const Navbar = () => {
     return (
       <nav className='navbar'>
 
-          <div className="logo">Your Logo</div>
+          <div className="logo"><b>LOGO</b></div>
         <div className="navbar-left">
           < ul id="nav-menu" className={isMenuOpen? "#nav-menu active": "#nav-menu"}>
             <li className="active">Dashboard</li>
@@ -42,11 +45,22 @@ export const Navbar = () => {
           <div className="toggle-menu" onClick={toggleMenu}>
             <i className="fas fa-bars"></i>
           </div>
-          <div className="clocked-in">Clocked In</div>
-          <div className="notification">Notification</div>
+          <div className="clocked-in">
+          <button>
+                                    <span className="clocked-icon">
+                                        <BsBoxArrowInRight /> Clocked-In
+                                    </span>
+                                </button>
+          </div>
+          <div className="notification">
+            <GrNotification/>
+          </div>
+          <div className="verify">
+            <BsQuestionCircle/>
+          </div>
           <div className="user-info">
             <div className="user-image">
-              <img src="user-image.jpg" alt="User" />
+              <img src="" alt="MA" />
             </div>
             <div className="user-account">Account</div>
           </div>

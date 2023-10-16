@@ -9,6 +9,9 @@
     /* height: 100vh; */
     min-height: 100vh;
     max-height: 100%;
+    flex: 15%;
+    /* padding: 20px; */
+    /* height: 100%; */
 }
 
 .sidebar h2 {
