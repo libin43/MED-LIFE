@@ -1,13 +1,13 @@
 .container {
     display: flex;
     flex-direction: column;
-    height: 100%
+    height: 100vh;
 }
 
 .content {
     display: flex;
     flex-direction: row;
-    /* height: 100%; */
+    height: 100%;
 }
 
 .sidebar {
@@ -20,8 +20,7 @@
 }
 
 .breadcrumb-container {
-    padding: 0;
-    /* height: 15%; */
+    padding: 20px;
 }
 
 .search-filter-content {

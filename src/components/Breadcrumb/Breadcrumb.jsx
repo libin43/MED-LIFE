@@ -4,7 +4,8 @@ import './Breadcrumb.css'
 export const Breadcrumb = () => {
     const items = [{text:['appointments', 'tasks']}]
     return (
-        <ul className="breadcrumb">
+        <div className="breadcrumb">
+        <ul >
         {/* {items.map((item, index) => ( */}
           <li >
             {/* <a href={item.link}>{item.text}</a> */}
@@ -17,5 +18,6 @@ export const Breadcrumb = () => {
           
         {/* ))} */}
       </ul>
+      </div>
       );
 }

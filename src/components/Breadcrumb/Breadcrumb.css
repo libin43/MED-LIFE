@@ -3,13 +3,20 @@
     list-style: none;
     display: flex;
     margin: 0;
-    padding: 0;
+    height: 100%;
     background: #ffff;
   }
   
+  .breadcrumb ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 2em;
+  }
   .breadcrumb li {
     /* margin-right: 10px; */
     font-size: 14px;
+    
   }
   
   .breadcrumb li:not(:last-child) {
