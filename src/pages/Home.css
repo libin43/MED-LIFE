@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: column;
     height: 100%;
-    
 }
 
 .content {
@@ -12,9 +11,12 @@
     /* height: 100%; */
 }
 
-/* .sidebar-container {
-
-} */
+.data-container {
+    margin: 1rem;
+    background: #fff;
+    border-radius: 8px;
+    padding: 1rem;
+}
 
 .main-content {
     flex: 85%;
@@ -26,7 +28,7 @@
 }
 
 .search-filter-content {
-    padding: 20px;
+    
 }
 
 .content-body {

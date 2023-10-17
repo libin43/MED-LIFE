@@ -38,6 +38,9 @@ export const Home = () => {
                     <div className="breadcrumb-container">
                         <Breadcrumb className="breadcrumb" />
                     </div>
+                    <div className="data-container">
+
+
                     <div className="search-filter-content">
                         <div className="content-body">
                             <Searchbar />
@@ -76,6 +79,7 @@ export const Home = () => {
                         <TaskItem patientName={'Libin'} taskId={12333} status={'Overdue'} appointmentId={222222} dateTime={'26 Fri 2022'} imageUrl={'https://www.shutterstock.com/image-vector/person-icon-260nw-282598823.jpg'}/>
                         <TaskItem patientName={'Libin'} taskId={12333} status={'Overdue'} appointmentId={222222} dateTime={'26 Fri 2022'} imageUrl={'https://www.shutterstock.com/image-vector/person-icon-260nw-282598823.jpg'}/>
 
+                    </div>
                     </div>
                 </div>
             </div>

@@ -4,7 +4,7 @@
       /* 4 equal columns */
       gap: 10px;
       /* Spacing between columns and rows */
-      margin: 1rem 1rem 2rem 1rem;
+      margin: 1rem 0 2rem 0;
       padding: 1rem 0 1rem 0;
       border: 2px solid rgb(180, 180, 180);
       border-radius: 5px;
