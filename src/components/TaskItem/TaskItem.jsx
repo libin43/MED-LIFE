@@ -1,7 +1,7 @@
 import React from 'react'
 import "./TaskItem.css"
 
-export const TaskItem = ({ patientName, taskId, status, appointmentId, dateTime, imageUrl }) => {
+export const TaskItem = ({ key, patientName, taskId, status, appointmentId, dateTime, imageUrl, duration, assesmentType, selectedBreadCrumb }) => {
     return (
         <div className="task-item-grid-container">
 
@@ -17,17 +17,23 @@ export const TaskItem = ({ patientName, taskId, status, appointmentId, dateTime,
             <div className="grid3-container">
                 <div className="row task-id">Task ID: <span>{taskId}</span></div>
                 <div className="row date-time">Date and time: <span>{dateTime}</span></div>
-                <div className="row date-time">Duration: <span>{dateTime}</span></div>
+                <div className="row date-time">Duration: <span>{duration}</span></div>
             </div>
 
             <div className="grid4-container">
-                <div className="status">Status: <span>{status}</span></div>
+                {status !== 'Complete' ? (
+                    <div className={`status ${status === 'Overdue' ? 'status-overdue' : 'status-upcoming'}`}>
+                        Status: <span>{status}</span>
+                    </div>
+                ) : (
+                    ''
+                )}
             </div>
 
             <div className="grid5-container">
-                <a className="assessment-link">Intake Comprehensive Assessment</a>
+                <a className="assessment-link">{assesmentType}</a>
                 <div className="assessment-btn">
-                <button>Start Assesment</button>
+                    <button>{status === 'Upcoming' ? 'Start Assesment' : 'Continue Assesment'}</button>
                 </div>
             </div>
         </div>

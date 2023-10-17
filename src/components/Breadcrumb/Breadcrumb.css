@@ -13,12 +13,12 @@
   
   .bold-text {
     font-weight: bold;
-    font-size: 24px; /* Adjust the font size as needed */
+    font-size: 24px;
   }
   
   .navigation-info {
-    font-size: 16px; /* Adjust the font size as needed for the navigation info */
-    color: rgb(84, 84, 84); /* Set the color as needed */
+    font-size: 16px;
+    color: rgb(84, 84, 84);
     display: flex;
     align-items: center;
     font-size: 15px;
@@ -26,13 +26,13 @@
   }
   
   .info-icon {
-    color: rgb(84, 84, 84); /* Color for the info icon (>>) */
-    margin: 0 5px; /* Add spacing around the icon */
+    color: rgb(84, 84, 84);
+    margin: 0 5px;
   }
   
   .active-heading-option-container {
     display: flex;
-    padding-top: 2rem; /* Add spacing between active heading and options */
+    padding-top: 2rem;
     
   }
   
@@ -40,8 +40,6 @@
     font-size: 16px;
     cursor: pointer;
     padding-right: 1rem;
-    /* position: relative; */
-    /* Add other styles as needed */
   }
 
   .active-heading-option.selected {
@@ -51,12 +49,11 @@
 
   .active-heading-option::after {
     content: '';
-    /* flex-grow: 1; */
     padding-bottom: 10px;
   }
 
   .active-heading-option.selected::after {
-    display: block; /* Display the line when selected */
-    border-bottom: 3.5px solid rgb(30, 16, 127); /* Transparent line by default */
+    display: block;
+    border-bottom: 3.5px solid rgb(30, 16, 127);
   }
   

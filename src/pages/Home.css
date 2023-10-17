@@ -8,7 +8,6 @@
     display: flex;
     flex-direction: row;
     margin-top: 62px;
-    /* height: 100%; */
 }
 
 .data-container {
@@ -24,11 +23,6 @@
 
 .breadcrumb-container {
     padding: 0;
-    /* height: 15%; */
-}
-
-.search-filter-content {
-    
 }
 
 .content-body {
@@ -36,9 +30,6 @@
     justify-content: space-between;
     align-items: center;
 }
-
-/* .assessment-content {
-} */
 
 .filter-btn {
     display: inline-block;
@@ -50,7 +41,7 @@
 }
 
 .filter-btn:hover {
-    background-color: #1E107F;
+    background-color: #e5e3f7;
     cursor: pointer;
 }
 

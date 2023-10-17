@@ -9,62 +9,62 @@ import './Navbar.css'
 export const Navbar = () => {
 
 
-    const [isMenuOpen, setMenuOpen] = useState(false);
+  const [isMenuOpen, setMenuOpen] = useState(false);
 
-    const toggleMenu = () => {
-      setMenuOpen(!isMenuOpen);
-    };
-  
-    return (
-      <nav className='navbar'>
+  const toggleMenu = () => {
+    setMenuOpen(!isMenuOpen);
+  };
 
-          <div className="logo"><b>LOGO</b></div>
-        <div className="navbar-left">
-          < ul id="nav-menu" className={isMenuOpen? "#nav-menu active": "#nav-menu"}>
-            <li className="active">Dashboard</li>
+  return (
+    <nav className='navbar'>
 
-            <li className="parent">Clinical
+      <div className="logo"><b>LOGO</b></div>
+      <div className="navbar-left">
+        < ul id="nav-menu" className={isMenuOpen ? "#nav-menu active" : "#nav-menu"}>
+          <li className="active">Dashboard</li>
+
+          <li className="parent">Clinical
             <ul className="submenu">
-            <li>Add Clinical</li>
+              <li>Add Clinical</li>
             </ul>
-            </li>
+          </li>
 
-            <li>Billing</li>
-            <li>Resources</li>
-            <li>Patients</li>
-          </ul>
+          <li>Billing</li>
+          <li>Resources</li>
+          <li>Patients</li>
+        </ul>
+      </div>
+
+      <div id="mobile" onClick={toggleMenu}>
+        {
+          isMenuOpen ? <FaTimes /> : <FaBars />
+        }
+      </div>
+
+      <div className="navbar-right">
+        <div className="toggle-menu" onClick={toggleMenu}>
+          <i className="fas fa-bars"></i>
         </div>
-
-        <div id="mobile" onClick={toggleMenu}>
-            {
-                isMenuOpen ? <FaTimes/>: <FaBars/>
-            }
-        </div>
-
-        <div className="navbar-right">
-          <div className="toggle-menu" onClick={toggleMenu}>
-            <i className="fas fa-bars"></i>
-          </div>
-          <div className="clocked-in">
+        <div className="clocked-in">
           <button>
-                                    <span className="clocked-icon">
-                                        <BsBoxArrowInRight /> Clocked-In
-                                    </span>
-                                </button>
-          </div>
-          <div className="notification">
-            <GrNotification/>
-          </div>
-          <div className="verify">
-            <BsQuestionCircle/>
-          </div>
-          <div className="user-info">
-            <div className="user-image">
-              <img src="" alt="MA" />
-            </div>
-            <div className="user-account">Account</div>
-          </div>
+            <span className="clocked-icon">
+              <BsBoxArrowInRight /> Clocked-In
+            </span>
+          </button>
         </div>
-      </nav>
-    );
+        <div className="notification">
+          <GrNotification />
+        </div>
+        <div className="verify">
+          <BsQuestionCircle />
+        </div>
+        <div className="user-info">
+          <div className="user-image">
+            <img src="" alt="MA" />
+          </div>
+          <div className="user-account">Account</div>
+        </div>
+      </div>
+    </nav>
+  );
 }

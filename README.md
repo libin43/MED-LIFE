@@ -1,8 +1,17 @@
-# React + Vite
+# Medlife Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Medlife is a UI project built using React and CSS.
 
-Currently, two official plugins are available:
+### Prerequisites
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Make sure you have [Node.js](https://nodejs.org/) installed.
+
+## Getting Started
+
+To run the server-side of the LIWEB School Management Application locally, follow these steps:
+
+1. Clone this repository: `git clone https://github.com/libin43/MED-LIFE.git`
+2. Get into the directory: `cd medlife-project`
+3. Install the dependencies: `npm install`
+4. Start the application: `npm run dev`
+5. Route to: `http://127.0.0.1:5173/doctor/home`

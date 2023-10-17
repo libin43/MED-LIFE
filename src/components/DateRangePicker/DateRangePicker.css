@@ -1,11 +1,9 @@
-/* CustomDatePicker.css */
 
-/* Style the custom date picker container */
 .custom-datepicker {
     display: flex;
     border: 2px solid rgba(0, 0, 0, 0.432);
-    background-color: #ffff; /* Black background color for the container */
-    border-radius: 8px; /* Adjust the corner radius as needed */
+    background-color: #ffff;
+    border-radius: 8px;
     padding: 10px;
     align-items: center;
     font-size: 16px;
@@ -13,14 +11,12 @@
     box-sizing: border-box;
   }
   
-  /* Style the input inside the custom date picker */
   .react-datepicker-wrapper {
-    flex: 1; /* Make the input grow to fill available space */
+    flex: 1;
   }
   
-  /* Optional: Add focus styles for user interaction */
   .custom-datepicker:focus-within {
-    outline: none; /* Remove the default focus outline */
-    border-color: #0077cc; /* Change container border color on focus */
+    outline: none;
+    border-color: #0077cc;
   }
   

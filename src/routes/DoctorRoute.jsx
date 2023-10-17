@@ -6,7 +6,7 @@ import { Home } from '../pages/Home';
 export const DoctorRoute = () => {
   return (
     <Routes>
-        <Route path='/doctor' element={<Home/>}/>
+        <Route path='/home' element={<Home/>}/>
     </Routes>
   )
 }

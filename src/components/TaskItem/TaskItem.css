@@ -81,12 +81,20 @@
       width: calc(100% - 8rem);
   }
 
-  .grid4-container .status span {
-      font-size: large;
-      font-weight: 600;
-      padding-left: 1rem;
-      color: rgb(219, 18, 18);
-  }
+
+  .grid4-container .status-overdue span {
+    font-size: large;
+    font-weight: 600;
+    padding-left: 1rem;
+    color: rgb(219, 18, 18);
+}
+
+.grid4-container .status-upcoming span {
+  font-size: large;
+  font-weight: 600;
+  padding-left: 1rem;
+  color: rgb(72, 219, 18);
+}
 
   .patient-name {
       font-weight: 700;
